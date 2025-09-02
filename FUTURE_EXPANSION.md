@@ -102,3 +102,13 @@ Since this project is hosted on **Bitbucket** and deployed to **AWS**, the recom
 
 > Recommendation: Start with **Bitbucket Pipelines + AWS Elastic Beanstalk** for simplicity.  
 > Later scale to ECS/EKS as the system grows.
+## 10. Codebase Cleanup & Best Practices
+- Align seed data with the `product` table and enable SQL init.
+- Externalize database credentials using environment variables.
+- Set default logging level to `INFO`.
+- Clean up `ProductRequest` DTO and validate positive price values.
+- Use `BigDecimal` directly in `updatePrice` endpoint.
+- Return structured validation errors via `ApiResponse` helper.
+- Add transactional annotation to `ProductService` for updates.
+- Relocate or remove sample `HelloController`.
+- Introduce unit and integration tests (JUnit, Testcontainers, MockMvc).
