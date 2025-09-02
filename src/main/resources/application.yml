@@ -14,10 +14,13 @@ spring:
     init:
       mode: never
 
-logging:
-  level:
-    root: DEBUG
+  logging:
+    level:
+      root: DEBUG
 
-# Note:
-# - Default profile uses in-memory H2 so the app runs without external DB.
-# - For MySQL, use: -Dspring.profiles.active=dev and ensure MySQL is running.
+  # Note:
+  # - Default profile uses in-memory H2 so the app runs without external DB.
+    # - For MySQL, use: -Dspring.profiles.active=dev and ensure MySQL is running.
+
+jwt:
+  secret: 0123456789ABCDEF0123456789ABCDEF
