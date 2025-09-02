@@ -1,0 +1,14 @@
+com/yourcompany/productapp/infrastructure/ProductEntity.class
+com/yourcompany/productapp/interfaces/product/HelloController.class
+com/yourcompany/productapp/domain/ProductRepository.class
+com/yourcompany/productapp/domain/Product.class
+com/yourcompany/productapp/application/ProductService.class
+com/yourcompany/productapp/interfaces/product/dto/ProductRequest.class
+com/yourcompany/productapp/domain/ProductNotFoundException.class
+com/yourcompany/productapp/infrastructure/JpaProductRepository.class
+com/yourcompany/productapp/ProductApplication.class
+com/yourcompany/productapp/interfaces/product/ProductController.class
+com/yourcompany/productapp/interfaces/product/dto/ProductResponse.class
+com/yourcompany/productapp/interfaces/GlobalExceptionHandler.class
+com/yourcompany/productapp/interfaces/common/ApiResponse.class
+com/yourcompany/productapp/infrastructure/SpringDataProductJpaRepository.class

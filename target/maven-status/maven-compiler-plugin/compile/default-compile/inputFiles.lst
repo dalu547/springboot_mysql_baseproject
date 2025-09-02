@@ -1,0 +1,14 @@
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/ProductApplication.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/application/ProductService.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/domain/Product.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/domain/ProductNotFoundException.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/domain/ProductRepository.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/infrastructure/JpaProductRepository.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/infrastructure/ProductEntity.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/infrastructure/SpringDataProductJpaRepository.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/interfaces/GlobalExceptionHandler.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/interfaces/common/ApiResponse.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/interfaces/product/HelloController.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/interfaces/product/ProductController.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/interfaces/product/dto/ProductRequest.java
+/Users/mivada-dkalla/Documents/workspace/satom-services/springboot_mysql_scaffold/src/main/java/com/yourcompany/productapp/interfaces/product/dto/ProductResponse.java
