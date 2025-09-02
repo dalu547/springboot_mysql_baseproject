@@ -6,8 +6,6 @@ This is a **Spring Boot Modular Monolith scaffold** with a clean architecture st
 
 [Onboarding](ONBOARDING.md) | [Future Expansion](FUTURE_EXPANSION.md)
 
-[Onboarding](ONBOARDING.md) | [Future Expansion](FUTURE_EXPANSION.md)
-
 ---
 
 ## Foundation Features (Checklist with Explanations)
