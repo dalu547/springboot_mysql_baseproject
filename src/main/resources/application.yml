@@ -12,15 +12,18 @@ spring:
     enabled: false
   sql:
     init:
-      mode: never
-
-  logging:
-    level:
-      root: DEBUG
-
-  # Note:
-  # - Default profile uses in-memory H2 so the app runs without external DB.
-    # - For MySQL, use: -Dspring.profiles.active=dev and ensure MySQL is running.
+      mode: always
 
 jwt:
   secret: 0123456789ABCDEF0123456789ABCDEF
+logging:
+  level:
+    root: INFO
+
+# Note:
+# - Default profile uses in-memory H2 so the app runs without external DB.
+# - For MySQL, use: -Dspring.profiles.active=dev and ensure MySQL is running.
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

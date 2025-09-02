@@ -111,8 +111,7 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 
 ## API Documentation
 
-- Swagger UI: `http://localhost:8080/swagger-ui.html`  
-- OpenAPI spec: `http://localhost:8080/v3/api-docs`  
+After starting the application, open `http://localhost:8080/swagger-ui.html` in your browser to view the interactive Swagger UI. The generated OpenAPI specification is available at `http://localhost:8080/v3/api-docs`.
 
 ---
 

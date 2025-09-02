@@ -23,7 +23,8 @@ public class GlobalExceptionHandler {
             String errorMessage = error.getDefaultMessage();
             errors.put(fieldName, errorMessage);
         });
-        return ResponseEntity.badRequest().body(ApiResponse.error(errors.toString()));
+        return ResponseEntity.badRequest()
+                .body(ApiResponse.error(errors, "Validation failed"));
     }
 
     @ExceptionHandler(ProductNotFoundException.class)
