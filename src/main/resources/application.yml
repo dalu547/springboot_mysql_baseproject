@@ -21,3 +21,7 @@ logging:
 # Note:
 # - Default profile uses in-memory H2 so the app runs without external DB.
 # - For MySQL, use: -Dspring.profiles.active=dev and ensure MySQL is running.
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
