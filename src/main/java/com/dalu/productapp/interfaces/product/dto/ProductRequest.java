@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
+@Data
 public class ProductRequest {
 
     @NotBlank(message = "Name cannot be blank")
@@ -21,14 +22,6 @@ public class ProductRequest {
     public ProductRequest(String name, BigDecimal price) {
         this.name = name;
         this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
     }
 }
 
