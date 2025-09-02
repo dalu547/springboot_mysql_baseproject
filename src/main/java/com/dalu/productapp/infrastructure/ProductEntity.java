@@ -1,6 +1,5 @@
 package com.dalu.productapp.infrastructure;
 
-import com.dalu.productapp.domain.Product;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -29,13 +28,5 @@ public class ProductEntity {
         this.id = id;
         this.name = name;
         this.price = price;
-    }
-
-    public static ProductEntity fromDomain(Product product) {
-        return new ProductEntity(product.getId(), product.getName(), product.getPrice());
-    }
-
-    public Product toDomain() {
-        return new Product(this.id, this.name, this.price);
     }
 }

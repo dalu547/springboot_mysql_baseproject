@@ -2,6 +2,7 @@ package com.dalu.productapp.infrastructure;
 
 import com.dalu.productapp.domain.Product;
 import com.dalu.productapp.domain.ProductRepository;
+import com.dalu.productapp.mapper.ProductMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,23 +14,25 @@ import java.util.UUID;
 public class JpaProductRepository implements ProductRepository {
 
     private final SpringDataProductJpaRepository jpaRepo;
+    private final ProductMapper mapper;
 
-    public JpaProductRepository(SpringDataProductJpaRepository jpaRepo) {
+    public JpaProductRepository(SpringDataProductJpaRepository jpaRepo, ProductMapper mapper) {
         this.jpaRepo = jpaRepo;
+        this.mapper = mapper;
     }
 
     @Override
     public Product save(Product product) {
-        return jpaRepo.save(ProductEntity.fromDomain(product)).toDomain();
+        return mapper.toDomain(jpaRepo.save(mapper.toEntity(product)));
     }
 
     @Override
     public Optional<Product> findById(UUID id) {
-        return jpaRepo.findById(id).map(ProductEntity::toDomain);
+        return jpaRepo.findById(id).map(mapper::toDomain);
     }
 
     @Override
     public List<Product> findAll() {
-        return jpaRepo.findAll().stream().map(ProductEntity::toDomain).toList();
+        return mapper.toDomainList(jpaRepo.findAll());
     }
 }
