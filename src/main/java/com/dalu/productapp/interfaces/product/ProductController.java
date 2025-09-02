@@ -10,6 +10,7 @@ import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
@@ -38,9 +39,8 @@ public class ProductController {
     }
 
     @PutMapping("/{id}/price")
-    public ResponseEntity<ApiResponse<ProductResponse>> updatePrice(@PathVariable UUID id,
-                                                       @RequestParam double price) {
-        Product updated = service.updatePrice(id, java.math.BigDecimal.valueOf(price));
+    public ResponseEntity<ApiResponse<ProductResponse>> updatePrice(@PathVariable UUID id, @RequestParam BigDecimal price) {
+        Product updated = service.updatePrice(id, price);
         ProductResponse response = mapper.toResponse(updated);
         return ResponseEntity.ok(ApiResponse.success(response, "Price updated successfully"));
     }

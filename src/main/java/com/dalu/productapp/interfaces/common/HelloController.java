@@ -1,4 +1,4 @@
-package com.dalu.productapp.interfaces.product;
+package com.dalu.productapp.interfaces.common;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

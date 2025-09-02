@@ -12,11 +12,11 @@ spring:
     enabled: false
   sql:
     init:
-      mode: never
+      mode: always
 
 logging:
   level:
-    root: DEBUG
+    root: INFO
 
 # Note:
 # - Default profile uses in-memory H2 so the app runs without external DB.
