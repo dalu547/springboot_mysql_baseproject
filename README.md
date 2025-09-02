@@ -2,6 +2,8 @@
 
 This is a **Spring Boot Modular Monolith scaffold** with a clean architecture structure using **Maven, MySQL, Flyway**, and **IntelliJ IDEA**.
 
+[Onboarding](ONBOARDING.md) | [Future Expansion](FUTURE_EXPANSION.md)
+
 ---
 
 ## Foundation Features (Checklist with Explanations)
