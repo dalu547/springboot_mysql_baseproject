@@ -59,8 +59,11 @@ cd your-repo
 
 Sample request:  
 ```bash
-curl -X POST http://localhost:8080/api/products   -H "Content-Type: application/json"   -d '{"name":"Laptop","price":1200.00}'
-```
+curl -X POST http://localhost:8080/api/products \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Laptop","price":1200.00}'
+  
+  ```
 
 ---
 

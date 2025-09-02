@@ -5,16 +5,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 1. Security
-- **Why**: Protect APIs and sensitive data.  
-- **Options**:
-  - Spring Security with JWT (stateless, for REST APIs)
-  - OAuth2 / OpenID Connect (SSO, enterprise integration)
-- **When to add**: If project requires authentication, role-based access, or token-based security.
-
----
-
-## 2. Caching
+## 1. Caching
 - **Why**: Improve performance and reduce DB load.  
 - **Options**:
   - Spring Cache abstraction with Redis
@@ -22,7 +13,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 3. Asynchronous Processing / Messaging
+## 2. Asynchronous Processing / Messaging
 - **Why**: Decouple services, handle background tasks, improve scalability.  
 - **Options**:
   - Spring Events (lightweight async inside app)
@@ -31,7 +22,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 4. Testing Enhancements
+## 3. Testing Enhancements
 - **Why**: Ensure reliability and prevent regressions.  
 - **Options**:
   - JUnit 5 + Mockito for unit tests
@@ -41,7 +32,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 5.  CI/CD Automation
+## 4.  CI/CD Automation
 - **Why**: Automate build, test, and deployment pipelines.  
 - **Options**:
   - GitHub Actions, GitLab CI, or Jenkins
@@ -49,7 +40,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 6. Monitoring & Observability
+## 5. Monitoring & Observability
 - **Why**: Track application health, performance, and errors in production.  
 - **Options**:
   - Micrometer + Prometheus + Grafana (metrics)
@@ -58,7 +49,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 7. API Versioning & Governance
+## 8. API Versioning & Governance
 - **Why**: Avoid breaking changes in APIs.  
 - **Options**:
   - URI versioning (`/api/v1/products`)
@@ -67,7 +58,7 @@ Not all projects will need these — add them **when requirements demand**.
 
 ---
 
-## 8. Modularization / Microservices Transition
+## 9. Modularization / Microservices Transition
 - **Why**: Scale system as features grow.  
 - **Options**:
   - Gradually split domains into separate deployable services
@@ -85,7 +76,7 @@ This ensures the system stays **simple, maintainable, and future-proof**.
 
 ---
 
-## 9. CI/CD with Bitbucket + AWS
+## 10. CI/CD with Bitbucket + AWS
 
 Since this project is hosted on **Bitbucket** and deployed to **AWS**, the recommended CI/CD setup is:
 

@@ -1,6 +1,10 @@
 # ProductApp (Spring Boot Monolith Scaffold)
 
-This is a **Spring Boot Modular Monolith scaffold** with a clean architecture structure using **Maven, MySQL, Flyway**, and **IntelliJ IDEA**.
+This is a **Spring Boot Modular Monolith scaffold** with a clean architecture structure using **Maven, MySQL, Flyway**,  and **Spring Security**.
+
+---
+
+[Onboarding](ONBOARDING.md) | [Future Expansion](FUTURE_EXPANSION.md)
 
 ---
 
@@ -92,9 +96,27 @@ This scaffold includes all the essentials to build enterprise-grade applications
 - **What**: Library to reduce boilerplate (`@Getter`, `@Setter`, `@Builder`, etc.).  
 - **Use**: Simplifies entities and DTOs by auto-generating getters, setters, etc.  
 - **Communicates with**: Compile-time annotation processor.  
-- **Why**: Keeps codebase **clean and concise** without redundant methods.  
+- **Why**: Keeps codebase **clean and concise** without redundant methods.
 
 ---
+
+### 12. **Security (Spring Security + JWT)**
+- **What**: Authentication/authorization for APIs using JWT (Bearer tokens).
+- **Use**: Protect endpoints; allow public access only for auth and docs.
+- **Communicates with**: Controllers (route protection), Filters (JWT parsing), UserDetailsService (user lookup).
+- **Why**: Secure by default; works well for SPAs/mobile; stateless & scalable.
+
+---
+
+### 13. **Mapping (MapStruct)**
+- **What**: Compile-time bean mapper (no reflection) for converting Entities ↔ DTOs.
+- **Use**: Define a mapper interface; MapStruct generates the implementation.
+- **Communicates with**: Controllers (DTOs) & Services/Repositories (entities).
+- **Why**: Eliminates manual mapping code; safer & faster than reflection mappers.
+
+---
+
+
 
 ## Profiles
 
