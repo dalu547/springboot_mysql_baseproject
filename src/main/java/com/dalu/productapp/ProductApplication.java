@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProductApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(ProductApplication.class);
-        app.setWebApplicationType(WebApplicationType.SERVLET); // explicitly start web server
+        app.setWebApplicationType(WebApplicationType.SERVLET);
         app.run(args);
     }
 }

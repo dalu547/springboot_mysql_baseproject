@@ -55,7 +55,7 @@ cd your-repo
 
 ## 6. Access APIs  
 - Swagger UI: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)  
-- API Docs (JSON): [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)  
+- API Docs (JSON): [http://localhost:8080/v1/api-docs](http://localhost:8080/v1/api-docs)  
 
 Sample request:  
 ```bash
