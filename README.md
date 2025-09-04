@@ -120,14 +120,19 @@ This scaffold includes all the essentials to build enterprise-grade applications
 
 ## Profiles
 
-- **Dev** → local development (debug logs, local MySQL)  
-- **Staging** → QA/UAT pre-production environment  
-- **Prod** → production system (secure configs via env vars)  
+- Default (no profile) → in-memory H2 for quick start; Flyway disabled; SQL init disabled; JWT secret from env with default.
+- **Dev** → local development (debug logs, local MySQL, Flyway enabled)
+- **Staging** → QA/UAT pre-production environment
+- **Prod** → production system (secure configs via env vars; never commit secrets)
 
 Activate a profile with:
 ```bash
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
+
+Environment variables of note:
+- JWT_SECRET: JWT signing secret (required in prod)
+- SPRING_DATASOURCE_...: Standard Spring datasource overrides
 
 ---
 

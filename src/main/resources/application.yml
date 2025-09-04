@@ -12,10 +12,11 @@ spring:
     enabled: false
   sql:
     init:
-      mode: always
+      mode: never
 
 jwt:
-  secret: 0123456789ABCDEF0123456789ABCDEF
+  secret: ${JWT_SECRET:dev-secret-change-me}
+
 logging:
   level:
     root: INFO
@@ -27,3 +28,12 @@ logging:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
